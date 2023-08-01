@@ -4,5 +4,11 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Get Code
+        uses: actions/download-artifact@v3
+        with:
+          name: dist-files
+      - name: List Files
+        run: ls
       - name: Output information
         run: echo "Deploying & uploading ..."
