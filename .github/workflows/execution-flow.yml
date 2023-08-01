@@ -64,3 +64,4 @@ jobs:
   deploy:
     needs: build
     uses: ./.github/workflows/reusable.yml
+
